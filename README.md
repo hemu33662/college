@@ -1,1 +1,115 @@
-# college
+# college 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Project Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+.rating{
+text-align:center;
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>RESTAURANT RECOMMENDATIONS FEEDBACK</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="rollNumber">Restaurant Name</label>
+                <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter the restaurant name" required>
+            </div>
+<label>Rate Restaurant</label><br>
+<div class="rating"><div>
+           <input type="radio" id="star1" name="rating" value="1">
+		<label for="star1">    &#9733;</label>
+</div><div>
+<input type="radio" id="star2" name="rating" value="2">
+		<label for="star2">&#9733 &#9733;</label>
+</div><div>
+<input type="radio" id="star3" name="rating" value="3">
+		<label for="star3">&#9733 &#9733 &#9733;</label></div>
+<div>
+<input type="radio" id="star4" name="rating" value="4">
+		<label for="star4">&#9733 &#9733 &#9733 &#9733</label></div>
+<div>
+<input type="radio" id="star5" name="rating" value="5">
+		<label for="star5">&#9733; &#9733 &#9733 &#9733 &#9733</label></div>
+
+        
+            <div class="form-group">
+                <label for="department">Rate Us</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Select your Rating Here...</option>
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">Average</option>
+                    <option value="4">Bad</option>
+		    <option value="5">Poor/Very Bad</option>
+                </select>
+            </div>
+ <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Rate our Service here.."></textarea>
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
